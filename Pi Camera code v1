@@ -6,4 +6,5 @@ camera.resolution = (2592, 1944)
 
 for i in range(3*60):
     camera.capture(f'image_{i:03d}.jpg')  # Take a picture every minute for 3 hours
-    sleep(60)
+    sleep(60) # this uses the sleep functionality to delay each photo by 60 seconds so code is executed like so:
+# photo *break for 60 sec* photo *break for 60 sec* and so on for 3 hours    
