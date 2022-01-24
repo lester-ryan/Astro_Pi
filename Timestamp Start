@@ -1,0 +1,10 @@
+from datetime import datetime
+import sys
+
+now = datetime.now()
+with open('/Users/lester/Dropbox/time.txt', 'w') as f:
+    sys.stdout = f 
+    current_time = now.strftime("%H:%M:%S %d/%m/%y")
+    print("Time code started =", current_time)
+    sys.stdout = original_stdout # Reset the standard output to its original value
+# this will create a .txt file in the current work directory and save the start time of the code
