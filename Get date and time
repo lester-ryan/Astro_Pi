@@ -1,0 +1,14 @@
+import datetime
+
+def start_time():
+    e = datetime.datetime.now()
+    print ("%s:%s:%s %s/%s/%s " % (e.hour, e.minute, e.second, e.day, e.month, e.year, ))
+
+
+
+def end_time():
+    e = datetime.datetime.now()
+    print ("%s:%s:%s %s/%s/%s " % (e.hour, e.minute, e.second, e.day, e.month, e.year, ))
+    
+start_time()
+end_time()
