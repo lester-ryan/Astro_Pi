@@ -12,7 +12,7 @@ def take_photos():
 
     for i in range(3*55):
         location = ISS.coordinates()
-        file= open(f'image_{i:03d}_{location}.txt)','w')
+        file= open(f'image_{i:03d}_{location}.txt','w')
         file.close()
         current_time = time.time()
         camera.capture(f'image_{i:03d}_{current_time}.jpg')
