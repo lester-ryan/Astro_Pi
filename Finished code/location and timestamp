@@ -1,0 +1,17 @@
+from orbit import ISS
+from time import sleep
+import time
+
+
+
+def take_photos():
+    sleep(5)
+    for i in range(2*2):
+        location = ISS.coordinates()
+        file= open(f'image_{i:03d}_{location}.txt)','w')
+        file.close()
+        current_time = time.time()
+#        camera.capture(f'image_{i:03d}_{e}.jpg')
+        file = open(f'image_{i:03d}_{current_time}.jpg', 'w')
+        sleep(1)
+take_photos()
