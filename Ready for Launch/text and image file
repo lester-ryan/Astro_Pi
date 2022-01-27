@@ -13,7 +13,7 @@ def take_photos():
     for i in range(3*55):
         current_time = time.time()
         location = ISS.coordinates()
-        file= open(f'image_{i:03d}_{current_time}_{location}.txt)','w')
+        file= open(f'image_{i:03d}_{current_time}_{location}.txt','w')
         file.close()
         camera.capture(f'image_{i:03d}_{current_time}.jpg')
 # will generate a text file of name image_000_IERS2010 latitude -25.3839 N longitude -53.5197 E elevation 425957.1 m.txt)        
