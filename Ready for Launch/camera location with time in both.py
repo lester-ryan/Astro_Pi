@@ -22,10 +22,10 @@ def take_photos():
 take_photos()
 
 # camera turns on warms up for 5 secs
-# gets location and saves it as name in text file
-# takes a photo saves it with above file name and does nothing for 60 secs
+# gets location and time, saves them as name in text file
+# takes a photo saves it with above file name and uses same time as location
+# does nothing for 60 secs
 # repeats this 165 times for approx 165 mins
-
 
 
 
