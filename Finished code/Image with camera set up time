@@ -1,0 +1,21 @@
+from picamera import PiCamera
+from time import sleep
+import time
+
+def take_photos():
+    camera = PiCamera()
+    camera.resolution = (2592, 1944)
+    camera.start_preview()
+    sleep(5)
+# Camera warm-up time
+
+    for i in range(3*55):
+        current_time = time.time()
+        camera.capture(f'image_{i:03d}_{current_time}.jpg')
+#        will generate file of name image_001_1643210154.jpg
+        sleep(60)
+take_photos()
+
+# camera turns on warms up for 5 secs
+# takes a photo saves it with above file name and does nothing for 60 secs
+# repeats this 165 times for approx 165 mins
