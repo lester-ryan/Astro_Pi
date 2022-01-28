@@ -20,6 +20,6 @@ take_photos()
 
 
 
-for i in range (100):
+
     
 
