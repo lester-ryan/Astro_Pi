@@ -14,7 +14,7 @@ def take_photos():
 
     for i in range(170):
 #        execute the following loop 170 times over next 3 hours
-        txtfile = (open('test file for ISS.txt', 'a')) # write or append txt file
+        txtfile = (open('location file for ISS.txt', 'a')) # write or append txt file
         location = ISS.coordinates() # get location
         txtfile.writelines(f'{location} {i:03d}') # write a line with location info and loop no (in 3 digits)
         txtfile.writelines('\n') # new line
