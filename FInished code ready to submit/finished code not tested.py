@@ -39,7 +39,7 @@ take_photos()
 # we will also have 170 images
 # the image will be timestamped and the location will be available from the loop number saved on text file
 # each image can be location checked as it has the same loop number as corresponding info on text file
-# websites will verify info is correct and conver time
+# websites will verify info is correct and convert time
 
 
     
