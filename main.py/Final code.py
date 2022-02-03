@@ -7,7 +7,7 @@ from orbit import ISS
 def take_photos():
     
     camera = PiCamera()
-    camera.resolution = (2592, 1944)
+    camera.resolution = (4056, 3040)
     camera.start_preview()
     sleep(5)
 # Camera warm-up time
